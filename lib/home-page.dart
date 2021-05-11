@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         child: Text(
-                          'Title of the news Title of the news Title of the news Title of the news Title of the news ',
+                          news[index].title,
                           maxLines: 2,
                           textAlign: TextAlign.justify,
                           overflow: TextOverflow.ellipsis,
@@ -139,8 +139,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         child: Text(
-                          'Description of the news Description of the news Description of the news Description of the news Description of the news ',
-                          maxLines: 2,
+                          news[index].description,
+                          maxLines: 3,
                           textAlign: TextAlign.justify,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(fontSize: 14, color: Colors.grey),
